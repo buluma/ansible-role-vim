@@ -50,4 +50,4 @@ jobs:
         run: ansible-galaxy install buluma.vim
 
       - name: Check vim version
-        run: vim -version
+        run: ansible-playbook -K vim-config.yaml

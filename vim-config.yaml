@@ -1,0 +1,9 @@
+- name: Config Vim with plugins
+  hosts: localhost
+  gather_facts: yes
+  become: no
+
+  tasks:
+    - name: Configure Vim using role
+      import_role:
+        name: vim
