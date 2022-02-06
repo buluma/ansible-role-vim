@@ -47,7 +47,7 @@ jobs:
 
       # Install Role
       - name: Install Role
-        run: ansible-galaxy install buluma.vim
+        run: ansible-galaxy install buluma.vim -vvv
 
       - name: Check vim version
-        run: ansible-playbook -K vim-config.yaml
+        run: ansible-playbook -K vim-config.yaml -vvv
