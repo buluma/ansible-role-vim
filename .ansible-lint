@@ -1,0 +1,9 @@
+---
+#
+# Ansible managed
+#
+  - ./molecule/default/collections.yml
+  - ./.tox
+  - ./.cache
+  - ./.github
+  - ./requirements.yml
