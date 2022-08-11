@@ -5,13 +5,13 @@
   gather_facts: no
 
   tasks:
-    - name: Verify Vim is installed
+    - name: verify vim is installed
       ansible.builtin.command: |
         vim --version
       register: vim_version
       tags: verify
 
-    - name: Verify Vim version
+    - name: verify vim version
       ansible.builtin.debug:
         var: vim_version.stdout_lines
       tags: verify
