@@ -11,19 +11,13 @@ Install vim on your system.
 This example is taken from `molecule/default/converge.yml` and is tested on each push, pull request and release.
 ```yaml
 ---
-- hosts: all
-  vars:
-    ansible_python_interpreter: /usr/bin/python3
-    wp_version: 6.0.1
-    wp_mysql_db: 'database_name_here'
-    wp_mysql_user: 'username_here'
-    wp_mysql_password: 'password_here'
-    wp_webserver: nginx
-    wp_sitename: localhost
-    wp_admin_email: 'admin@example.com'
-    wp_install_dir: "/var/www/{{ wp_sitename }}"
+- name: converge
+  hosts: all
+  become: yes
+  gather_facts: yes
+
   roles:
-    - buluma.wordpress
+    - role: buluma.vim
 ```
 
 
@@ -91,4 +85,4 @@ Apache-2.0
 
 ## [Author Information](#author-information)
 
-[Michael Buluma](https://buluma.github.io/)
+[buluma](https://buluma.github.io/)

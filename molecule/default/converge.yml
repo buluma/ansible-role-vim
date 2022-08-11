@@ -1,4 +1,8 @@
 ---
-- hosts: all
+- name: converge
+  hosts: all
+  become: yes
+  gather_facts: yes
+
   roles:
-    - ansible-role-vim
+    - role: ansible-role-vim

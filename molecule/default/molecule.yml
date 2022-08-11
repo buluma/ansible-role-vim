@@ -31,6 +31,8 @@ provisioner:
       interpreter_python: auto_legacy_silent
     ssh_connection:
       pipelining: true
+verifier:
+  name: ansible
 scenario:
   create_sequence:
     - create
