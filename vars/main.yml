@@ -8,12 +8,10 @@ _install_packages:
     - vim-enhanced
     - git
     - powerline-fonts
-    - fzf
   Debian:
     - vim
     - git
     - fonts-powerline
-    - fzf
   RedHat:
     - vim-enhanced
     - git
