@@ -2,8 +2,17 @@
 # vars file for vim
 vim_dir: "{{ ansible_env.HOME }}/.vim"
 vimrc: "{{ ansible_env.HOME }}/.vimrc"
-install_packages:
-  - vim-enhanced
-  - git
-  - powerline-fonts
-  - fzf
+
+_install_packages:
+  default:
+    - vim-enhanced
+    - git
+    - powerline-fonts
+    - fzf
+  Debian:
+    - vim
+    - git
+    - fonts-powerline
+    - fzf
+
+install_packages: "{{ _install_packages[ansible_os_family] | default(_install_packages['default']) }}"

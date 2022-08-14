@@ -12,3 +12,7 @@ exclude_paths:
   - ./.cache
   - ./.github
   - ./requirements.yml
+
+warn_list:  # or 'skip_list' to silence them completely
+  - experimental  # all rules tagged as experimental
+  - git-latest  # Git checkouts must contain explicit version.

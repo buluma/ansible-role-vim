@@ -14,16 +14,28 @@ lint: |
 driver:
   name: docker
 platforms:
-  - name: "vim-${image:-fedora}-${tag:-latest}${TOX_ENVNAME}"
-    image: "${namespace:-buluma}/${image:-fedora}:${tag:-latest}"
-    command: /sbin/init
+  - name: ubuntu2204
+    image: buluma/docker-ubuntu2204-ansible
+    tmpfs:
+      - /run
+      - /tmp
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
-    privileged: yes
-    pre_build_image: yes
-    tty: true
-    environment:
-      container: docker
+    capabilities:
+      - SYS_ADMIN
+    command: "/usr/sbin/init"
+    pre_build_image: true
+  - name: fedora
+    image: buluma/docker-ubuntu2004-ansible
+    tmpfs:
+      - /run
+      - /tmp
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    capabilities:
+      - SYS_ADMIN
+    command: "/lib/systemd/systemd"
+    pre_build_image: true
 provisioner:
   name: ansible
   config_options:

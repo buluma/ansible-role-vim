@@ -3,6 +3,9 @@
   hosts: all
   become: yes
   gather_facts: yes
+  serial:
+    - 2
+    - 50%
 
   roles:
     - role: ansible-role-vim
