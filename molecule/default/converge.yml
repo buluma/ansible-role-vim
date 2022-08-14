@@ -4,8 +4,8 @@
   become: yes
   gather_facts: yes
   serial:
-    - 2
-    - 50%
+    - 3
+    - 30%
 
   roles:
     - role: ansible-role-vim

@@ -14,5 +14,8 @@ _install_packages:
     - git
     - fonts-powerline
     - fzf
+  RedHat:
+    - vim-enhanced
+    - git
 
 install_packages: "{{ _install_packages[ansible_os_family] | default(_install_packages['default']) }}"
