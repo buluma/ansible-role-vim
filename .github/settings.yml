@@ -5,4 +5,4 @@
 repository:
   description: Install vim on your system.
   homepage: https://buluma.github.io/
-  topics: vim, server, sudo, system, ansible, molecule, tox, playbook, hacktoberfest
+  topics: vim, server, sudo, system, ansible, molecule, tox, playbook
