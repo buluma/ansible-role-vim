@@ -1,10 +1,10 @@
-# [Ansible role vim](#vim)
+# Ansible role [vim](https://galaxy.ansible.com/ui/standalone/roles/buluma/vim/documentation)
 
 Install vim on your system.
 
-|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-vim/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-vim/actions/workflows/molecule.yml)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-vim/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-vim)|[![downloads](https://img.shields.io/ansible/role/d/4881)](https://galaxy.ansible.com/buluma/vim)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-vim.svg)](https://github.com/buluma/ansible-role-vim/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-vim.svg)](https://github.com/buluma/ansible-role-vim/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-vim.svg)](https://github.com/buluma/ansible-role-vim/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-vim/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-vim/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-vim.svg)](https://github.com/buluma/ansible-role-vim/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-vim.svg)](https://github.com/buluma/ansible-role-vim/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-vim.svg)](https://github.com/buluma/ansible-role-vim/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/vim)](https://galaxy.ansible.com/ui/standalone/roles/buluma/vim/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -69,10 +69,10 @@ plugins:
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | GitLab |
+| Requirement | GitHub | Version |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
-|[buluma.epel](https://galaxy.ansible.com/buluma/epel)|[![Build Status GitHub](https://github.com/buluma/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-epel/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-epel/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-epel)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
+|[buluma.epel](https://galaxy.ansible.com/buluma/epel)|[![Ansible Molecule](https://github.com/buluma/ansible-role-epel/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-epel/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-epel.svg)](https://github.com/shadowwalker/ansible-role-epel)|
 
 ## [Context](#context)
 
@@ -88,11 +88,11 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|34, 35, 36|
+|[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|all|
 |[opensuse](https://hub.docker.com/repository/docker/buluma/opensuse/general)|all|
 |[Ubuntu](https://hub.docker.com/repository/docker/buluma/ubuntu/general)|all|
 
-The minimum version of Ansible required is 2.10, tests have been done to:
+The minimum version of Ansible required is 2.12, tests have been done to:
 
 - The previous version.
 - The current version.
@@ -106,14 +106,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-vim/blob/master/LICENSE).
+[Apache-2.0](https://github.com/buluma/ansible-role-vim/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-Please consider [sponsoring me](https://github.com/sponsors/buluma).
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
