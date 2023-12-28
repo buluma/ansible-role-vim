@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.1](https://github.com/buluma/ansible-role-vim/tree/1.0.1) (2023-12-25)
+
+[Full Changelog](https://github.com/buluma/ansible-role-vim/compare/1.0.0...1.0.1)
+
 ## [1.0.0](https://github.com/buluma/ansible-role-vim/tree/1.0.0) (2022-02-06)
 
 [Full Changelog](https://github.com/buluma/ansible-role-vim/compare/18fb03402d744b74e52eabef640b12fe0ff94c19...1.0.0)
