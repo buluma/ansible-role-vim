@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-vim/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-vim/compare/1.0.1...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#6](https://github.com/buluma/ansible-role-vim/issues/6)
+
 ## [1.0.1](https://github.com/buluma/ansible-role-vim/tree/1.0.1) (2023-12-25)
 
 [Full Changelog](https://github.com/buluma/ansible-role-vim/compare/1.0.0...1.0.1)
